@@ -9,6 +9,8 @@ Created in Angular 15, using NX.
 
 ```plaintext
 git clone https://github.com/annaswitaj/budget-angular-app.git
+npm install -g nx
+npm install -g pnpm
 pnpm install
 pnpm start
 ```
