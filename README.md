@@ -10,14 +10,19 @@ Created in Angular 15, using NX.
 ```plaintext
 git clone https://github.com/annaswitaj/budget-angular-app.git
 npm install -g nx
-npm install -g pnpm
-pnpm install
-pnpm start
+nx install
+nx start
+```
+
+## Generate new Components
+
+```nx g c 'componentName'
+
 ```
 
 ## Tools used
 
--   pnpm
--   nx
--   angular 15
--   github-pages
+- pnpm
+- nx
+- angular 15
+- github-pages
