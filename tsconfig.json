@@ -19,10 +19,16 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@modules/*": ["src/modules/*"],
+      "@shared/*": ["src/shared/*"],
+      "@core/*": ["src/core/*"],
+      "@layout/*": ["src/layout/*"]
+    }
   },
   "files": [],
-  "include": [],
+
   "references": [
     {
       "path": "./tsconfig.app.json"
