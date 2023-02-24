@@ -12,6 +12,9 @@ git clone https://github.com/annaswitaj/budget-angular-app.git
 npm install -g nx
 nx install
 nx start
+
+pnpm install @ng-bootstrap/ng-bootstrap   
+npm install popper.js --save
 ```
 
 ## Generate new Components
