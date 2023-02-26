@@ -1,1 +1,31 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand"> <i class="bi bi-cash-coin"></i> BudgetApp</a>
+        <div class="d-none d-sm-block">
+            <ul ngbNav class="nav-pills">
+                <li [ngbNavItem]="1">
+                    <a data-toggle="tab" ngbNavLink [routerLink]="['/dashboard']">Dashboard</a>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a data-toggle="tab" ngbNavLink [routerLink]="['/budgets']">Budgets</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav">
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link" ngbDropdownToggle role="button">User</a>
+                    <ul class="dropdown-menu-end" ngbDropdownMenu>
+                        <li><a class="dropdown-item">Settings</a></li>
+                        <li><a class="dropdown-item">Support</a></li>
+                        <li><a class="dropdown-item">Log Out</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item">Authors</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
