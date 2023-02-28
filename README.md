@@ -16,8 +16,8 @@ nx start
 
 ## Generate new Components
 
-```nx g c 'componentName'
-
+```plaintext
+nx g c 'componentName'
 ```
 
 ## Tools used
