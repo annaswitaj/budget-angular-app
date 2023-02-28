@@ -9,6 +9,7 @@ Created in Angular 15, using NX.
 
 ```plaintext
 git clone https://github.com/annaswitaj/budget-angular-app.git
+npm install -g pnpm
 npm install -g nx
 nx install
 nx start
