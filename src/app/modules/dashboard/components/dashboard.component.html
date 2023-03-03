@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<div class="dashboard middle">
+  <div class="dashboard-wallets">
+    <h3 class="mb-4">Wallets</h3>
+    <div
+      class="dashboard-wallets__container d-flex flex-column flex-lg-row gap-3 align-items-center"
+    >
+      <app-extended-card
+        title="Cash Wallet"
+        subtitle="Cash"
+        [displayIcon]="true"
+      ></app-extended-card>
+      <app-btn-card
+        description="Do you keep money in cash and in an account? Add another wallet :)"
+        btnText="Add New Wallet"
+      ></app-btn-card>
+    </div>
+  </div>
+</div>

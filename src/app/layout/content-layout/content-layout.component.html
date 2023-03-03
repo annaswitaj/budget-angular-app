@@ -1,3 +1,8 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="content-layout vh-100 d-flex flex-column">
+  <app-navbar></app-navbar>
+  <div
+    class="content-layout__contianer p-3 px-4 d-flex flex-column align-items-center bg-light h-100"
+  >
+    <router-outlet></router-outlet>
+  </div>
+</div>
