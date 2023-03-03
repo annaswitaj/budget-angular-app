@@ -10,5 +10,5 @@ export class ExtendedCardComponent {
   @Input() displayIcon = false;
   @Input() subtitle!: string;
   @Input() amount = -23.45;
-  //TODO
+  //TODO -fetch from API
 }
