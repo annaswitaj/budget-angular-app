@@ -1,1 +1,78 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid ">
+        <a class="navbar-brand mx-3" [routerLink]="['/dashboard']"> <i class="bi bi-cash-coin"></i> BudgetApp</a>
+        <div class="d-none d-sm-block">
+            <ul ngbNav class="nav-pills">
+                <li [ngbNavItem]="1">
+                    <a data-toggle="tab" ngbNavLink [routerLink]="['/dashboard']">Dashboard</a>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a data-toggle="tab" ngbNavLink [routerLink]="['/budgets']">Budgets</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- mobile start -->
+        <div class="d-block d-sm-none footer fixed-bottom container">
+            <ul ngbNav class="nav-pills justify-content-center row">
+                <li [ngbNavItem]="1" class="col col-sm-6">
+                    <a ngbNavLink class="text-center" data-toggle="tab" [routerLink]="['/dashboard']"><i
+                            class="bi bi-bar-chart-fill"></i><br></a>
+                </li>
+                <li [ngbNavItem]="2" class="col">
+                    <a ngbNavLink class="text-center" data-toggle="tab" [routerLink]="['/budgets']"><i
+                            class="bi bi-currency-dollar"></i><br></a>
+                </li>
+            </ul>
+        </div>
+        <!-- end -->
+        <!-- mobile sidenav start -->
+        <div class="d-block d-sm-none ">
+            <ul class="nav mx-3">
+                <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse"
+                    class="border rounded-3 p-1 text-decoration-none">
+                    <i class="bi bi-list bi-lg py-2 p-1"></i> User</a>
+            </ul>
+        </div>
+        <div class="d-block d-sm-none container-fluid">
+            <div class="row flex-nowrap justify-content-center">
+                <div class="col-auto px-0 ">
+                    <div id="sidebar" class="collapse collapse-vertical border-end">
+                        <div id="sidebar-nav" class="btn-group min-vh-50">
+                            <a href="#" class="btn btn-primary" data-bs-parent="#sidebar"><i
+                                    class="bi bi-gear-wide-connected"></i>
+                                <span> Settings</span> </a>
+                            <a href="#" class="btn btn-primary" data-bs-parent="#sidebar"><i
+                                    class="bi bi-question-octagon-fill"></i>
+                                <span> Support</span></a>
+                            <a href="#" class="btn btn-primary" data-bs-parent="#sidebar"><i
+                                    class="bi bi-person-lines-fill"></i>
+                                <span> Authors</span></a>
+                            <a href="#" class="btn btn-primary" data-bs-parent="#sidebar"><i
+                                    class="bi bi-box-arrow-right"></i>
+                                <span> Log Out</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <div class="d-none d-sm-block">
+            <ul class="nav mx-3">
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link" ngbDropdownToggle role="button">User</a>
+                    <ul class="dropdown-menu-end" ngbDropdownMenu>
+                        <li><a class="dropdown-item">Settings</a></li>
+                        <li><a class="dropdown-item">Support</a></li>
+                        <li><a class="dropdown-item">Authors</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
