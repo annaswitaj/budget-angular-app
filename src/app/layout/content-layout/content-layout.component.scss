@@ -1,0 +1,11 @@
+@import '_breakpoints';
+
+.content-layout__contianer ::ng-deep [class*='middle'] {
+  width: 90vw;
+}
+
+@media (min-width: $breakpoint-lg) {
+  .content-layout__contianer ::ng-deep [class*='middle'] {
+    width: 75vw;
+  }
+}

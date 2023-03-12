@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ContentLayoutComponent} from './layout/content-layout/content-layout.component';
+import {ContentLayoutComponent} from '@layout/content-layout/content-layout.component';
 
 export const appRoutes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -12,19 +12,19 @@ export const appRoutes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () =>
-          import('./modules/dashboard/dashboard.module').then(
+          import('@modules/dashboard/dashboard.module').then(
             m => m.DashboardModule
           )
       },
       {
         path: 'budgets',
         loadChildren: () =>
-          import('./modules/budgets/budgets.module').then(m => m.BudgetsModule)
+          import('@modules/budgets/budgets.module').then(m => m.BudgetsModule)
       },
       {
         path: 'wallet',
         loadChildren: () =>
-          import('./modules/wallet/wallet.module').then(m => m.WalletModule)
+          import('@modules/wallet/wallet.module').then(m => m.WalletModule)
       }
     ]
   },

@@ -1,0 +1,17 @@
+<div
+  class="extended-card card d-flex flex-row align-items-center shadow-sm border-0"
+>
+  <div *ngIf="displayIcon" class="card-icon ps-3">
+    <i class="bi bi-wallet2 fs-2"></i>
+  </div>
+  <div class="card-body ps-3 py-2">
+    <h5 class="card-title mt-2">{{title}}</h5>
+    <h6 *ngIf="subtitle" class="card-subtitle mb-2 text-muted">{{subtitle}}</h6>
+    <h4
+      class="card-amount"
+      [ngClass]="{'text-success' : amount>=0, 'text-danger':amount<0  }"
+    >
+      {{amount| currency:'PLN'}}
+    </h4>
+  </div>
+</div>

@@ -1,11 +1,11 @@
 @import '_breakpoints';
 
-app-extended-card {
+.btn-card {
   width: 100%;
 }
 
 @media (min-width: $breakpoint-lg) {
-  app-extended-card {
+  .btn-card {
     width: 18rem;
   }
 }
